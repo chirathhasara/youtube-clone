@@ -1,0 +1,174 @@
+.header{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(202, 192, 192);
+    border-bottom-style: solid;
+
+}
+
+.left-section{ 
+    display: flex;
+    align-items: center;
+
+}
+.left-menu{
+    height: 24px;
+    margin-left: 18px;
+    margin-right: 25px;
+}
+.logo{
+    height: 22px;
+}
+
+.middle-section{
+
+    display: flex;
+    flex:1;
+    margin-left: 50px;
+    margin-right: 40px;
+    max-width: 500px;
+    align-items: center;
+}
+.search-bar{
+    height: 31px;
+    flex: 1;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1.5px;
+    font-family: Roboto,Arial,;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left:15px;
+    width: 0;
+}
+.search-bar::placeholder{
+    font-family: Roboto,Arial,;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+.search-icon{
+    width: 23px;
+    margin-top: 5px;
+}
+.voice-icon{
+width: 25px;
+
+}
+
+.search-button{
+    width: 64px;
+    height: 35px;
+    background-color: #f7f7f7;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+   
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.notification-icon-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.search-button .tooletip,
+.voice-search-button .tooletip,
+.upload-icon-container .tooletip,
+.notification-icon-container .tooletip{
+    position:absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    border-radius: 2px;
+    font-size: 11px;
+    bottom: -25px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: Roboto,Arial;
+}
+
+.search-button:hover .tooletip,
+.voice-search-button:hover .tooletip,
+.upload-icon-container:hover .tooletip,
+.notification-icon-container:hover .tooletip{
+    opacity: 1;
+}
+
+
+.voice-search-button{
+    width: 40px;
+    height: 40px;
+    background-color: #f7f7f7;
+    border-width: 0;
+    border-style: solid;
+    margin-left: 8px;
+    border-radius: 20px;
+    border-color: #cccccc;
+    
+}
+
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-right: 23px;
+}
+.upload-icon{
+    height: 25px;
+
+}
+.apps-icon{
+    height: 25px;
+
+}
+.notification-icon{
+    height: 25px;
+
+}
+.my-chanal-icon{
+    height: 32px;
+    border-radius: 16px;
+
+}
+
+.notification-icon-container{
+    position: relative;
+}
+.notification-number{
+    position:absolute;
+    top:-3px;
+    right:-2px;
+    background-color: red;
+    color: white;
+    font-family: Roboto;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 10px;
+} 
+
